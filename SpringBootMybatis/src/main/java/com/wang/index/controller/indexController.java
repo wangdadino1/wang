@@ -1,9 +1,6 @@
 package com.wang.index.controller;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -16,13 +13,9 @@ import java.util.Map;
  */
 @Controller
 @RequestMapping("/")
-/*@PropertySource("classpath:application.yml")//读取application.yml文件*/
 public class indexController {
-/*    @Value("${server.servlet.context-path}")
-    private String contextPath;*/
     @RequestMapping("")
-    public String toIndex(/*Model model*/){
-        //model.addAttribute("contextPath",contextPath);
+    public String toIndex(){
         return "index2";
     }
     @RequestMapping("/test")
