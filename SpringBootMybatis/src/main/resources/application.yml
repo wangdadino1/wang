@@ -1,0 +1,30 @@
+server:
+  #端口号
+  port: 8080
+# DATASOURCE
+spring:
+  devtools:
+    restart:
+      exclude: templates , static
+  datasource:
+    url: jdbc:mysql://101.200.241.57:3306/guns_advanced?characterEncoding=utf-8&useSSL=false
+    username: mysql_user
+    password: wang
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#redis
+  #redis:
+   # host: 127.0.0.1
+    #port: 6379
+    #password:
+    #jedis:
+     # pool:
+      #  max-active: 8
+       # max-wait: 1
+        #max-idle: 8
+        #min-idle: 0
+    #timeout: 30000
+# MyBatis
+mybatis:
+  typeAliasesPackage: com.example.api.*.dao
+  mapperLocations: classpath:/mapper/*.xml
+

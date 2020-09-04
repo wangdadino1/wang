@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8">
+    <title>小小影视</title>
+    <link rel="stylesheet" href="/weui-2.3.0/dist/style/weui.css" media="all">
+    <link rel="stylesheet" href="/layui/css/layui.css" media="all">
+    <script src="/layui/layui.js"></script>
+    <script src="/index.js"></script>
+    <style>
+       #test2 img{
+            width: 325px;
+            height: 350px;
+           margin: 0 auto;
+        }
+        #dongzuo img {
+            width: 140px;
+            height: 167px;
+            margin-left: 25px;
+        }
+       #dongzuo p {
+           margin-left: 25px;
+       }
+       #dongman img {
+           width: 140px;
+           height: 167px;
+           margin-left: 25px;
+       }
+       #dongman p {
+           margin-left: 25px;
+       }
+       #xiju img {
+           width: 140px;
+           height: 167px;
+           margin-left: 25px;
+       }
+       #xiju p {
+           margin-left: 25px;
+       }
+       .layui-row p{
+           margin-top: 10px;
+           margin-bottom: 10px;
+       }
+    </style>
+</head>
+<body style="background-color: #ededed">
+<div class="page" >
+    <div class="page__bd">
+        <h1 style="background-color: #ededed;color: #c87d2f;font-style: normal;text-align: center;margin-top: 30px;">小小影视</h1>
+        <div class="weui-search-bar" id="searchBar" style="margin-top: 14px">
+            <form class="weui-search-bar__form">
+                <div class="weui-search-bar__box">
+                    <i class="weui-icon-search"></i>
+                    <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索" required/>
+                    <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+                </div>
+                <label class="weui-search-bar__label" id="searchText">
+                    <i class="weui-icon-search"></i>
+                    <span>搜索</span>
+                </label>
+            </form>
+            <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+        </div>
+
+
+        <div class="layui-row" style="margin-top: 14px;">
+                <div class="layui-carousel" id="test2" lay-filter="test1" style="margin: 0 auto">
+                    <div carousel-item="">
+                        <div><img src="/img/cfpl4.png" onclick="index.boFang('https://www.mgtv.com/b/338497/8980904.html?fpa=15801&fpos=1&lastp=ch_home')"></div>
+                        <div><img src="https://puui.qpic.cn/vcover_vt_pic/0/mzc00200q60wvkr1590127460144/350" onclick="index.boFang('https://v.qq.com/x/cover/mzc00200q60wvkr.html')"></div>
+                        <div><img src="https://ae01.alicdn.com/kf/Habf7b4b8c22b4421bd0e19e8183778b3F.jpg" onclick="index.boFang('https://v.qq.com/x/cover/fgqtuu38z91hfyw.html')"></div>
+                        <div><img src="https://ae01.alicdn.com/kf/Hb1a6aab0259141ceb8289db5468784f19.jpg" onclick="index.boFang('https://www.iqiyi.com/v_19rr7p4jz4.html?src=focustext_1_20130410_5')"></div>
+                        <div><img src="https://puui.qpic.cn/vcover_vt_pic/0/7vb9tgbdi71z9141489560620/350" onclick="index.boFang('https://www.iqiyi.com/v_19rrm2y660.html#vfrm=19-9-0-1')"></div>
+                        <div><img src="https://puui.qpic.cn/vcover_vt_pic/0/wpl6khm6pzauf8i1484535985/350" onclick="index.boFang('https://www.iqiyi.com/v_19rr9z1nlk.html#vfrm=19-9-0-1')"></div>
+                    </div>
+                </div>
+            </div>
+
+        <h1 class="page__title" style="margin-left: 25px;margin-top: 14px">动作</h1>
+        <div class="layui-row" id="dongzuo" style="margin-top: 14px;">
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
+                <img src="/img/parker.png" onclick="index.boFang('https://v.qq.com/x/cover/gothgwl98bmq6es.html')">
+                <p class="page__desc">杰森斯坦森车内1v4</p>
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
+                <img src="/img/wzhy.png" onclick="index.boFang('https://v.qq.com/x/cover/mzc00200xo7ksp5.html')">
+                <p class="page__desc">后羿大战蝙蝠王</p>
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
+                <img src="/img/ssjj.png" onclick="index.boFang('https://v.qq.com/x/cover/xhjxt4qacp7x6vf.html')">
+                <p class="page__desc">狙击手遭陷害成凶手</p>
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
+                <img src="/img/wmkd.png" onclick="index.boFang('https://v.qq.com/x/cover/ynynna2w2idaae1.html')">
+                <p class="page__desc">斯坦森舒淇上演激情速递</p>
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
+                <img src="/img/lldq.png" onclick="index.boFang('https://v.qq.com/x/cover/3fvg46217gw800n.html')">
+                <p class="page__desc">吴京点燃木星拯救地球</p>
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
+                <img src="/img/fczlm.png" onclick="index.boFang('https://v.qq.com/x/cover/zcw1fntf0nh8z79.html')">
+                <p class="page__desc">复仇者联盟3部连看</p>
+            </div>
+        </div>
+
+
+        <h1 class="page__title" style="margin-left: 25px;margin-top: 14px">喜剧</h1>
+        <div class="layui-row" id="xiju" style="margin-top: 14px;margin-bottom: 14px">
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
+                <img src="https://ae01.alicdn.com/kf/Habf7b4b8c22b4421bd0e19e8183778b3F.jpg" onclick="index.boFang('https://v.qq.com/x/cover/fgqtuu38z91hfyw.html')">
+                <p class="page__desc">流浪荒岛一出好戏</p>
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
+                <img src="/img/bjwjs.png" onclick="index.boFang('https://v.qq.com/x/cover/mzc00200elo3vea.html')">
+                <p class="page__desc">宋晓峰酒桌赢各路高手</p>
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
+                <img src="https://puui.qpic.cn/vcover_vt_pic/0/tpa0c309erq2p7t1545014750/220" onclick="index.boFang('https://v.qq.com/x/cover/tpa0c309erq2p7t.html')">
+                <p class="page__desc">任素汐和绑匪嘴炮恋爱</p>
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
+                <img src="https://puui.qpic.cn/vcover_vt_pic/0/agq0ydhoxzitatw1582617517149/220" onclick="index.boFang('https://v.qq.com/x/cover/agq0ydhoxzitatw.html')">
+                <p class="page__desc">巨石强森组团打BOSS</p>
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
+                <img src="https://puui.qpic.cn/vcover_vt_pic/0/z6j3ixjjcokafyc1566896570/220" onclick="index.boFang('https://v.qq.com/x/cover/z6j3ixjjcokafyc.html')">
+                <p class="page__desc">是金子，总会花光的</p>
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
+                <img src="https://puui.qpic.cn/vcover_vt_pic/0/og0eputlxwet1cn1524011116/220" onclick="index.boFang('https://v.qq.com/x/cover/og0eputlxwet1cn.html')">
+                <p class="page__desc">双面徐峥走私印度抗癌药</p>
+            </div>
+        </div>
+
+
+        <h1 class="page__title" style="margin-left: 25px;margin-top: 14px">动漫</h1>
+        <div class="layui-row" id="dongman" style="margin-top: 14px;margin-bottom: 14px">
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
+                <img src="https://puui.qpic.cn/vcover_vt_pic/0/m441e3rjq9kwpsc1575196882/260" onclick="index.boFang('https://v.qq.com/cartoon/p/topic/dldldh/index.html')">
+                <p class="page__desc">斗罗大陆</p>
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
+                <img src="https://puui.qpic.cn/vcover_vt_pic/0/p0pcfbdk318ry3m1525318295/260" onclick="index.boFang('https://v.qq.com/x/cover/p0pcfbdk318ry3m/c0508rnhgui.html')">
+                <p class="page__desc">雄兵连</p>
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
+                <img src="https://puui.qpic.cn/vcover_vt_pic/0/y4g7p8eka7bshz31504059681/260" onclick="index.boFang('https://v.qq.com/x/cover/y4g7p8eka7bshz3/i0544naygqq.html')">
+                <p class="page__desc">雄兵连之天河战役加长版</p>
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
+                <img src="https://puui.qpic.cn/vcover_vt_pic/0/ei44lqqq0fsg5aq1547432177/0" onclick="index.boFang('https://v.qq.com/x/cover/ei44lqqq0fsg5aq/m00294km8qz.html')">
+                <p class="page__desc">雄兵连之诸天降临</p>
+            </div>
+<!--            <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
+                <img src="https://puui.qpic.cn/vcover_vt_pic/0/z6j3ixjjcokafyc1566896570/220" onclick="index.boFang('https://v.qq.com/x/cover/z6j3ixjjcokafyc.html')">
+                <p class="page__desc">是金子，总会花光的</p>
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
+                <img src="https://puui.qpic.cn/vcover_vt_pic/0/og0eputlxwet1cn1524011116/220" onclick="index.boFang('https://v.qq.com/x/cover/og0eputlxwet1cn.html')">
+                <p class="page__desc">双面徐峥走私印度抗癌药</p>
+            </div>-->
+        </div>
+
+
+        <div class="page__bd page__bd_spacing" style="margin-bottom: 20px">
+            <div class="weui-footer">
+                <p class="weui-footer__text">Copyright &copy; 20020-2020 wangxian</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script type="text/javascript">
+
+    var movie ={};
+    layui.use(['carousel', 'form','jquery'], function(){
+        var
+            carousel = layui.carousel,
+            $ = layui.$,
+            form = layui.form;
+
+
+        //改变下时间间隔、动画类型、高度
+        carousel.render({
+            elem: '#test2'
+            ,interval: 1800
+            ,anim: 'fade'
+            ,height: '350px'
+            ,width:  '325px'
+        });
+
+        movie.openTab = function () {
+            layer.open({
+                type: 1
+                , title: '选集'
+                , offset: 'auto' //具体配置参考：http://www.layui.com/doc/modules/layer.html#offset
+                , id: 'layerDemo' //防止重复弹出
+                , content: '<div style="padding: 20px 100px;">' +
+                    '<table>' +
+                    '<tr>' +
+                    '<td>' +
+                    '<a href="https://v.qq.com/x/cover/ei44lqqq0fsg5aq/o30446ga3ng.html">1</a>' +
+                    '</td>' +
+                    '<td>' +
+                    '<a href="https://v.qq.com/x/cover/ei44lqqq0fsg5aq/t3044fomkqx.html">2</a>' +
+                    '</td>' +
+                    '<td>' +
+                    '<a href="https://v.qq.com/x/cover/ei44lqqq0fsg5aq/j0033zig8hf.html">3</a>' +
+                    '</td>' +
+                    '<td>' +
+                    '<a href="https://v.qq.com/x/cover/ei44lqqq0fsg5aq/o0033r2exya.html">4</a>' +
+                    '</td>' +
+                    '<td>' +
+                    '<a href="https://v.qq.com/x/cover/ei44lqqq0fsg5aq/m00294km8qz.html">5</a>' +
+                    '</td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>' +
+                    '<a href="https://v.qq.com/x/cover/ei44lqqq0fsg5aq/r0029kywtv3.html">6</a>' +
+                    '</td>' +
+                    '<td>' +
+                    '<a href="https://v.qq.com/x/cover/ei44lqqq0fsg5aq/d0029zxjb24.html">7</a>' +
+                    '</td>' +
+                    '<td>' +
+                    '<a href="https://v.qq.com/x/cover/ei44lqqq0fsg5aq/m0029imoiwn.html">8</a>' +
+                    '</td>' +
+                    '<td>' +
+                    '<a href="https://v.qq.com/x/cover/ei44lqqq0fsg5aq/h0029estj4g.html">9</a>' +
+                    '</td>' +
+                    '<td>' +
+                    '<a href="https://v.qq.com/x/cover/ei44lqqq0fsg5aq/l0029n0pcqw.html">10</a>' +
+                    '</td>' +
+                    '</tr>' +
+                    '</table>'
+                    + '</div>'
+                , btn: '关闭全部'
+                , btnAlign: 'c' //按钮居中
+                , shade: 0 //不显示遮罩
+                , yes: function () {
+                    layer.closeAll();
+                }
+            });
+        }
+        $(function(){
+
+
+            var $searchBar = $('#searchBar'),
+                $searchResult = $('#searchResult'),
+                $searchText = $('#searchText'),
+                $searchInput = $('#searchInput'),
+                $searchClear = $('#searchClear'),
+                $searchCancel = $('#searchCancel');
+            hideSearchResult();
+            function hideSearchResult(){
+                $searchResult.hide();
+                $searchInput.val('');
+            }
+            function cancelSearch(){
+                hideSearchResult();
+                $searchBar.removeClass('weui-search-bar_focusing');
+                $searchText.show();
+            }
+
+            $searchText.on('click', function(){
+                $searchBar.addClass('weui-search-bar_focusing');
+                $searchInput.focus();
+            });
+            $searchInput
+                .on('blur', function () {
+                    if(!this.value.length) cancelSearch();
+                })
+                .on('input', function(){
+                    if(this.value.length) {
+                        $searchResult.show();
+                    } else {
+                        $searchResult.hide();
+                    }
+                })
+            ;
+            $searchClear.on('click', function(){
+                hideSearchResult();
+                $searchInput.focus();
+            });
+            $searchCancel.on('click', function(){
+                cancelSearch();
+                $searchInput.blur();
+            });
+        });
+    });
+</script>
+</body>
+</html>
